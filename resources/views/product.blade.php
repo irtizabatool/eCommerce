@@ -9,15 +9,17 @@
         </div>
         <div class="carousel-inner">
           @foreach ($products as $item)
-          <a href="detail/{{$item['id']}}">
+
             <div class="carousel-item {{$item['id']==1? 'active': ''}}">
+                <a href="detail/{{$item['id']}}">
                 <img src="{{$item['gallery']}}" class="slider-img w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block slider-text">
                   <h5>{{$item['name']}}</h5>
                   <p>{{$item['description']}}</p>
                 </div>
-              </div>
             </a>
+              </div>
+
           @endforeach
 
         </div>
