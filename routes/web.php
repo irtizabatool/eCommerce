@@ -37,3 +37,9 @@ Route::get('/logout', function () {
 Route::get('/cart_list',[ProductController::class, 'cartList']);
 
 Route::get('/removefromcart/{id}', [ProductController::class, 'removeFromCart']);
+
+Route::get('/ordernow', [ProductController::class, 'orderNow']);
+
+Route::post('/place_order', [ProductController::class, 'placeOrder']);
+
+Route::get('/my_orders', [ProductController::class, 'myOrders']);
