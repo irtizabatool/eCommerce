@@ -33,3 +33,7 @@ Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
 });
+
+Route::get('/cart_list',[ProductController::class, 'cartList']);
+
+Route::get('/removefromcart/{id}', [ProductController::class, 'removeFromCart']);

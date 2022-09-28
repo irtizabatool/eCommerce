@@ -25,7 +25,7 @@
         </form>
         <ul class="navbar-nav d-flex">
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart({{$total}})</a>
+                <a class="nav-link" href="/cart_list">Cart({{$total}})</a>
               </li>
               @if(Session::has('user'))
               <li class="nav-item dropdown">
