@@ -22,6 +22,9 @@ Route::get('/login', function () {
 
 Route::post('/login', [UserController::class, 'login']);
 
+Route::post('/register', [UserController::class, 'register']);
+
+Route::view('/signup', 'register');
 
 Route::get('/', [ProductController::class, 'index']);
 
